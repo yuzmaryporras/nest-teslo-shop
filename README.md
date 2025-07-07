@@ -62,3 +62,27 @@ To progressively learn NestJS by building a API called "Teslo", practicing the u
   ```bash
   npm run start:dev
   ``` 
+
+
+## 📬 Postman Collection
+
+All available API requests are included in a Postman collection so you can test them easily.
+
+📁 File path:
+
+```bash
+postman/teslo-shop.postman_collection.json
+```
+
+You can import this file into Postman to test endpoints like:
+
+```bash
+GET /product/:term
+
+GET /product/?limit=5&offset=10 - Pagination
+
+POST /product
+
+PATCH /product/:term
+
+DELETE /product/:id
