@@ -57,6 +57,12 @@ To progressively learn NestJS by building a API called "Teslo", practicing the u
 
 5. Clone the file ```.env.template:```  and rename to ```.env```
 6. Fill the environment variables defined in ```.env```
+7. Execute seed
+
+  ```bash
+  localhost:3000/api/seed
+  ``` 
+
 7. Run application in dev with
 
   ```bash
