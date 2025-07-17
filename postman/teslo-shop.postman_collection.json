@@ -131,6 +131,14 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "seed",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
 		}
 	]
 }
