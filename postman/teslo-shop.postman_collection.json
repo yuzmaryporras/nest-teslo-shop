@@ -7,138 +7,225 @@
 	},
 	"item": [
 		{
-			"name": "create-product",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"title\": \"Juli's shirt5\",\n    \"sizes\": [\"S\", \"M\", \"L\"],\n    \"gender\": \"women\",\n    \"price\": 151.99\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:3000/api/products",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"api",
-						"products"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "get-all-product",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:3000/api/products?limit=3&offset=2",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"api",
-						"products"
-					],
-					"query": [
-						{
-							"key": "limit",
-							"value": "3"
+			"name": "product",
+			"item": [
+				{
+					"name": "create-product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Juli's shirt62\",\n    \"sizes\": [\"S\", \"M\", \"L\"],\n    \"gender\": \"women\",\n    \"price\": 151.99,\n    \"images\": [\n        \"https://images1\",\n        \"https://images1\"\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
 						},
-						{
-							"key": "offset",
-							"value": "2"
+						"url": {
+							"raw": "localhost:3000/api/products",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products"
+							]
 						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "get-product-by-id",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:3000/api/products/c4233bdf-8786-4c88-b03d-de89e1716c12",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"api",
-						"products",
-						"c4233bdf-8786-4c88-b03d-de89e1716c12"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "delete-product-by-id",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"url": {
-					"raw": "localhost:3000/api/products/c4233bdf-8786-4c88-b03d-de89e1716c13",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"api",
-						"products",
-						"c4233bdf-8786-4c88-b03d-de89e1716c13"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "update-product",
-			"request": {
-				"method": "PATCH",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"title\": \"Winter pants\",\n    \"tags\": [\"pants\"]\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "localhost:3000/api/products/2fa02ab7-f136-414f-8bef-6a8e9024ca62",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"api",
-						"products",
-						"2fa02ab7-f136-414f-8bef-6a8e9024ca62"
-					]
+				{
+					"name": "get-all-product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/products?limit=3&offset=2",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "3"
+								},
+								{
+									"key": "offset",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-product-by-id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/products/c4233bdf-8786-4c88-b03d-de89e1716c12",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products",
+								"c4233bdf-8786-4c88-b03d-de89e1716c12"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-product-by-id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/products/c4233bdf-8786-4c88-b03d-de89e1716c13",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products",
+								"c4233bdf-8786-4c88-b03d-de89e1716c13"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-product",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Winter pants\",\n    \"tags\": [\"pants\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/products/2fa02ab7-f136-414f-8bef-6a8e9024ca62",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products",
+								"2fa02ab7-f136-414f-8bef-6a8e9024ca62"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		},
 		{
 			"name": "seed",
-			"request": {
-				"method": "GET",
-				"header": []
-			},
-			"response": []
+			"item": [
+				{
+					"name": "seed",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Juli's shirt5\",\n    \"sizes\": [\"S\", \"M\", \"L\"],\n    \"gender\": \"women\",\n    \"price\": 151.99\n}"
+						},
+						"url": {
+							"raw": "localhost:3000/api/seed",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"seed"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "files product",
+			"item": [
+				{
+					"name": "create-files-product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": [
+										"/Users/yuzmary/Downloads/Miniaturas Instagram (2).jpg",
+										"/Users/yuzmary/Downloads/Miniaturas Instagram (9).jpg"
+									]
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/files/product",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"files",
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-files-product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/files/product/8528839-00-A_0_2000.jpg",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"files",
+								"product",
+								"8528839-00-A_0_2000.jpg"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
