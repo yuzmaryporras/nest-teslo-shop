@@ -9,6 +9,7 @@ import { SeedModule } from './seed/seed.module';
 import { FileModule } from './file/files.module';
 import { ServeStaticModule } from '@nestjs/serve-static';
 import { join } from 'path';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -29,7 +30,8 @@ import { join } from 'path';
     ProductsModule,
     SeedModule,
     CommonModule,
-    FileModule
+    FileModule,
+    AuthModule
   ],
   controllers: [AppController],
   providers: [AppService],
